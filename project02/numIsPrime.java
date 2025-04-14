@@ -3,11 +3,15 @@ import java.lang.System;
 
 public class numIsPrime {
     public static void main(String[] args) {
+        // take user input
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a Number");
         int num = sc.nextInt();
+
+        // set number prime for chack
         Boolean numisPrime = true;
-        sc.close();
+        
+        // chack for prime number
         if (num <= 1) {
             numisPrime = false;
         } else {
@@ -17,12 +21,13 @@ public class numIsPrime {
                     break;
                 }
             }
-
+            
         }
         if (numisPrime) {
             System.err.println("The Number is prime");
         }else{
             System.out.println("Number is not prime");
         }
+        sc.close();
     }
 }
