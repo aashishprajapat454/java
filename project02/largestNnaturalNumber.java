@@ -10,7 +10,6 @@ public class largestNnaturalNumber {
         int[] numArray = new int[number];
         System.out.println("Enter " + number + " Numbers");
         int maxNum = numArray[0];
-
         // for user input
         for (int i = 0; i < number; i++) {
             numArray[i] = sc.nextInt();
@@ -23,7 +22,7 @@ public class largestNnaturalNumber {
                 maxNum = numArray[i];
             }
         }
-
+        sc.close();
         // final output is here
         System.out.println("The largest number is : " + maxNum);
     }
